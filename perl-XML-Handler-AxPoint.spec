@@ -8,7 +8,7 @@ Summary:	XML::Handler::AxPoint Perl module - allows to create presentations in X
 Summary(pl):	Modu³ Perla XML::Handler::AxPoint - pozwala tworzyæ prezentacje w XML i PDF
 Name:		perl-XML-Handler-AxPoint
 Version:	1.30
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,7 +17,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-PDFLib >= 0.11
 BuildRequires:	perl-XML-SAX >= 0.09
 BuildRequires:	perl-XML-SAX-Writer >= 0.39
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-XML-SAX >= 0.09
 Requires:	perl-XML-SAX-Writer >= 0.39
 BuildArch:	noarch
@@ -38,7 +38,8 @@ zak³adkami, obrazkami itp.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -56,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %attr(755,root,root) %{_bindir}/axpoint
-%{perl_sitelib}/XML/Handler/AxPoint.pm
+%{perl_vendorlib}/XML/Handler/AxPoint.pm
 %{_mandir}/man3/*
