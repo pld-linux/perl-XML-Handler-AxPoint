@@ -12,6 +12,7 @@ Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	4ee781c20c3b274367c90c6770c1a053
 URL:		http://axpoint.axkit.org/
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-PDFLib >= 0.11
