@@ -9,7 +9,7 @@ Summary:	XML::Handler::AxPoint Perl module - allows to create presentations in X
 Summary(pl):	Modu³ Perla XML::Handler::AxPoint - tworzenie prezentacji w XML-u i PDF
 Name:		perl-XML-Handler-AxPoint
 Version:	1.30
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
