@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	XML
-%define		pnam	Handler-AxPoint
+%define	pdir	XML
+%define	pnam	Handler-AxPoint
 Summary:	XML::Handler::AxPoint Perl module - allows to create presentations in XML and PDF
 Summary(pl):	Modu³ Perla XML::Handler::AxPoint - tworzenie prezentacji w XML-u i PDF
 Name:		perl-XML-Handler-AxPoint
