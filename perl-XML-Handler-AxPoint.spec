@@ -17,7 +17,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-PDFLib >= 0.11
 BuildRequires:	perl-XML-SAX >= 0.09
 BuildRequires:	perl-XML-SAX-Writer >= 0.39
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	perl-XML-SAX >= 0.09
 Requires:	perl-XML-SAX-Writer >= 0.39
 BuildArch:	noarch
