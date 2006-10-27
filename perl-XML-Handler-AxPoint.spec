@@ -21,6 +21,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-PDFLib >= 0.14
 #BuildRequires:	perl-Text-Iconv
 BuildRequires:	perl-Time-Piece >= 1.08
+%{?with_tests:BuildRequires:	perl-XML-Filter-XSLT}
 BuildRequires:	perl-XML-SAX >= 0.09
 BuildRequires:	perl-XML-SAX-Writer >= 0.39
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -43,6 +44,9 @@ zak³adkami, obrazkami itp.
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
+# missing file?
+cp testfiles/{ax_logo,test}.png
+
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
@@ -53,7 +57,7 @@ zak³adkami, obrazkami itp.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
