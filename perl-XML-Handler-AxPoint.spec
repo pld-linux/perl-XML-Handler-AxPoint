@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Handler-AxPoint
 Summary:	XML::Handler::AxPoint Perl module - allows to create presentations in XML and PDF
-Summary(pl.UTF-8):   Moduł Perla XML::Handler::AxPoint - tworzenie prezentacji w XML-u i PDF
+Summary(pl.UTF-8):	Moduł Perla XML::Handler::AxPoint - tworzenie prezentacji w XML-u i PDF
 Name:		perl-XML-Handler-AxPoint
 Version:	1.5
 Release:	0.1
